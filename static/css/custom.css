@@ -12,6 +12,10 @@ footer {
     color: #A9A9A9;
 }
 
+p {
+    color:white;
+}
+
 .icon-bar {
     background-color: #fff;
 }
@@ -41,6 +45,7 @@ footer {
 .imgtest {
     background-image: url(https://www.rotinrice.com/wp-content/uploads/2016/10/ChocolateChipCookies-1-680x350.jpg);
     height: 50%;
+    height: 90vh;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -54,6 +59,14 @@ footer {
     padding-bottom: 50px;
 }
 
+.about-title {
+    font-family: 'Jomolhari', serif;
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 20px;
+}
+
 .cookieimg {
     background-image: url(https://florisse.nl/wp-content/uploads/2018/03/Cookies-PNG-Photos.png);
     width: 50%;
@@ -65,4 +78,43 @@ footer {
 
 .cookietest {
     margin-left: 50%;
+}
+
+.abouttext {
+    font-family: 'Jomolhari', serif;
+    color:white;
+    text-align: center;
+}
+
+.toto {
+
+    font-size: 18px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.okok {
+    top:61%;
+    position: absolute;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.cookie-img {
+    margin-top: 4%;
+}
+
+.glyphicon-envelope {
+    font-size: 30px;
+    padding:20px;
+}
+
+.glyphicon-earphone {
+    font-size: 30px;
+    padding:20px;
+}
+
+.button-change {
+    padding:15px;
+    
 }
