@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="container-fluid">
+<div class="container-fluid background-set">
     <div class="hero-image">
         <h1 class="about-title">About us</h1>
         <div class="col-md-6">
@@ -30,13 +30,13 @@
                         <a href="#"><button type="button" class="btn btn-warning btn-lg">Purchase!</button></a>
                     </div>
                     <div class="col-md-6 text-left button-change">
-                        <a href="#"><button type="button" class="btn btn-warning btn-lg">Donate</button></a>
+                        <a href="{% url 'donate' %}"><button type="button" class="btn btn-warning btn-lg">Donate</button></a>
                     </div>
                 </div>
                               <div class="row col-md-6">
                 <h2 class="abouttext">Get in touch with us</h2>
-                <p class="text-center toto"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>premium_cookies@project.com</p>
-                <p class="text-center toto"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>premium_cookies@project.com</p>
+                <p class="col-md-12 text-center toto"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>cookie@fine.com</p>
+                <p class="col-md-12 text-center toto"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>555 785 1034784</p>
             </div>
     </div> 
 </div>

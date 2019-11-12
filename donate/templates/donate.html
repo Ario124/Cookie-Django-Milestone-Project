@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="hero-image">
+            <div class="donation-info">
+                <h1 class="testtext">Donation</h1>
+                <p class="text-center toto">We appriciate your interest in donating. We have a donation limit so you can only donate a small sum, if you would like to support us even more then please proceed to make a purchase instead. Please select the option that suits you best. Choose from
+                    the options below.</p>
+                    <p class="text-center toto">Note that all donations are done with card.</p>
+                <p class="text-center toto">Thank You</p>
+            </div>
+    
+                <div class="donate-buttons">
+            <div class="col-md-4 col-md-push-2">
+                <p class="donation-sum">2€</p>
+                <a href="{% url 'donate' %}"><button type="button" class="btn btn-warning btn-lg">Donate 2</button></a>
+            </div>
+            <div class="col-md-4">
+                <p class="donation-sum">5€</p>
+               <a href="{% url 'donate' %}"><button type="button" class="btn btn-warning btn-lg">Donate 5</button></a>
+            </div>
+            <div class="col-md-4 col-md-pull-2">
+                <p class="donation-sum">10€</p>
+                <a href="{% url 'donate' %}"><button type="button" class="btn btn-warning btn-lg">Donate 10</button></a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

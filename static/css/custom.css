@@ -35,7 +35,7 @@ p {
 .hero-image {
     background-image: url(https://image.freepik.com/free-photo/smooth-dark-blue-with-black-vignette-studio-well-use-as-background-business-report-digital-website-template_1258-747.jpg);
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     display: table;
@@ -93,6 +93,12 @@ p {
     padding-right: 8%;
 }
 
+.donation-sum {
+
+    font-size: 18px;
+    padding-left: 9%;
+}
+
 .okok {
     top:61%;
     position: absolute;
@@ -117,4 +123,21 @@ p {
 .button-change {
     padding:15px;
     
+}
+
+.background-set {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.donation-info {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 5%;
+}
+
+.donate-buttons {
+    padding-top: 20px;
+    padding-left: 20%;
 }
