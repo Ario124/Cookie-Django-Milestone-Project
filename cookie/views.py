@@ -2,9 +2,9 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render, redirect, reverse, HttpResponseRedirect
-
+from .models import Cookie
 
 # Create your views here.
-
-def donate(request):
-    return render(request, "donate.html")
+def all_cookies(request):
+    cookies = Cookie.objects.all()
+    return render(request, "cookie.html", {'cookies': cookies})
