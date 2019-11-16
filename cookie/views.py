@@ -5,6 +5,6 @@ from django.shortcuts import render, redirect, reverse, HttpResponseRedirect
 from .models import Cookie
 
 # Create your views here.
-def all_cookies(request):
+def allcookies(request):
     cookies = Cookie.objects.all()
-    return render(request, "cookie.html", {'cookies': cookies})
+    return render(request, "cookie.html")

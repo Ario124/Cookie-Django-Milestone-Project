@@ -1,7 +1,7 @@
 from django.conf.urls import url, include
-from .views import all_cookies
+from .views import allcookies
 
 
 urlpatterns = [
-    url(r'^$', all_cookies, name='allcookies'),
+    url(r'^$', allcookies, name='allcookies'),
 ]

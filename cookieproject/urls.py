@@ -18,6 +18,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from accounts import urls as urls_accounts
 from home.views import index, about
+from cookie.views import allcookies
 from cookie import urls as urls_cookies
 from donate.views import donate
 from .settings import MEDIA_ROOT
