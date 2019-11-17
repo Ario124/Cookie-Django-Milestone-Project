@@ -37,7 +37,7 @@ def registration(request):
                 return redirect(reverse('index'))
             
             else:
-                messages.error(request, "This email is already in use, pick a new one.")
+                messages.error(request, "This email is already in use.")
     else:
         user_form = RegisterForm()
         
