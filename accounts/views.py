@@ -14,6 +14,7 @@ def login(request):
                     
             if user:
                 auth.login(request, user)
+                messages.success(request, "You have logged in.")
                 
                 return redirect(reverse('allcookies'))
     else:
@@ -32,9 +33,8 @@ def registration(request):
             user = auth.authenticate(request.POST.get('email'), password=request.POST.get('password1'))
             
             if user:
-                auth.login(request, user)
-                messages.success(request, "Your registration was successfully completed.")
-                return redirect(reverse('index'))
+                messages.success(request, "Your registration was successfully completed. You may now login.")
+                return redirect(reverse('login'))
             
             else:
                 messages.error(request, "This email is already in use, pick a new one.")
@@ -49,3 +49,4 @@ def logout(request):
     auth.logout(request)
     messages.success(request, "You have logged out.")
     return redirect(reverse('index'))
+    

@@ -151,3 +151,13 @@ p {
     background-repeat: no-repeat;
     display: table;
 }
+
+
+.messages {
+    position: absolute;
+    text-align: center;
+    width: 260px;
+    max-width: 70%;
+    padding: 10px;
+    margin-left: 42%;
+}

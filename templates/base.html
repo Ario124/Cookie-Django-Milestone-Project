@@ -13,6 +13,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     {% block head_js %}
+    <script>
+        setTimeout(function() {
+            $('.alert').fadeOut('slow');
+        }, 3000);
+        
+    </script>
     {% endblock head_js %}
 </head>
 <body>
@@ -41,6 +47,15 @@
                 </ul>
             </div>
         </div>
+                <!--This should change color, when user logs in GREEN and when user logsout RED -->
+                {% if messages %}
+                <div class="messages alert alert-success">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+                {% endif %}
+                </div>
+        
     </nav>
     <div class="">
         {% block content %} {% endblock %}
