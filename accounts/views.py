@@ -33,7 +33,7 @@ def registration(request):
             user = auth.authenticate(request.POST.get('email'), password=request.POST.get('password1'))
             
             if user:
-                messages.success(request, "Your registration was successfully completed. You may now login.")
+                messages.success(request, "Your registration was successful.")
                 return redirect(reverse('login'))
             
             else:
@@ -47,6 +47,6 @@ def registration(request):
     
 def logout(request):
     auth.logout(request)
-    messages.success(request, "You have logged out.")
+    messages.warning(request, "You have logged out.")
     return redirect(reverse('index'))
     

@@ -47,15 +47,19 @@
                 </ul>
             </div>
         </div>
-                <!--This should change color, when user logs in GREEN and when user logsout RED -->
-                {% if messages %}
+                
+                {% for message in messages %} 
+                {% if 'success' == message.tags %}
                 <div class="messages alert alert-success">
-                {% for message in messages %}
                     {{ message }}
-                {% endfor %}
-                {% endif %}
                 </div>
-        
+                {% elif 'warning' == message.tags %}
+                <div class="messages alert alert-danger">
+                    {{ message }}
+                </div>
+                {% endif %} 
+                {% endfor %}
+                
     </nav>
     <div class="">
         {% block content %} {% endblock %}
