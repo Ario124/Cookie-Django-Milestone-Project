@@ -7,4 +7,4 @@ from .models import Cookie
 # Create your views here.
 def allcookies(request):
     cookies = Cookie.objects.all()
-    return render(request, "cookie.html")
+    return render(request, "cookie.html", {"cookies": cookies})

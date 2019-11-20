@@ -1,7 +1,7 @@
 body {
     font-family: Arial;
     padding-top: 50px;
-    background-color: #222;
+    background-color: #e5fffa;
     color: green;
 }
 
@@ -14,7 +14,7 @@ footer {
 }
 
 p {
-    color:white;
+    color:black;
 }
 
 .icon-bar {
@@ -160,4 +160,44 @@ p {
     max-width: 70%;
     padding: 10px;
     margin-left: 42%;
+}
+
+.navbar-header {
+    margin-left: 45% !important;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.cookie-product {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.panel {
+    margin: 5px;
+}
+
+.cookie-block {
+    margin-left:21%;
+    margin-top: 20px;
+}
+
+.panel-default {
+    border-color: #aee8ff;
+}
+
+.price {
+    font-size: 22px;
+}
+
+h2, p {
+    color: black;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding-bottom: 30px;
 }

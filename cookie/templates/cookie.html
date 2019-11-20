@@ -1,27 +1,31 @@
 {% extends 'base.html' %}
-
 {% block content %}
-<div class="row row-flex">
+<div class="hero-image">
+<div class="cookie-block">
     {% for cookie in cookies %}
-        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
-            <div class="panel-body">
-                <div class="cookie" style="background-image: url('{{ MEDIA_URL }}{{ cookie.image }}')"></div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-3 display panel panel-default">
+            <div class="panel-body text-center">
+                <div class="cookie-product" style="background-image: url('{{ MEDIA_URL }}{{ cookie.image }}')"></div>
 
-                <h3>{{ cookie.name }}</h3>
-                <p class="cookie-description">{{ cookie.info }}</p>
-                <p>{{ cookie.price }}</p>
+                <h2>{{ cookie.name }}</h2>
+                <p>{{ cookie.info }}</p>
+                <p class="price">{{ cookie.price }}
+                <span>
+                    €
+                </span></p>
 
-                <form method="post" action="{% url 'add_to_cart' cookie.id %}">
+                <form method="post" action="{#}">
                     {% csrf_token %}
                     <div class="input-group">
                         <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
                         <span class="input-group-btn">
-                            <button class="btn btn-success" type="submit">Add</button>
+                            <button class="btn btn-danger" type="submit">Add</button>
                         </span>
                     </div>
                 </form>
             </div>
         </div>
     {% endfor %}
+</div>
 </div>
 {% endblock %}
