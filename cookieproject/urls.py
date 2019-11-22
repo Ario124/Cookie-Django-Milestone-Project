@@ -27,7 +27,7 @@ from django.views import static
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include(urls_accounts)),
-    url(r'^/', include(urls_cookies)),
+    url(r'^cookies/', include(urls_cookies)),
     url(r'^$', index, name='index'),
     url(r'^about/', about, name='about'),
     url(r'^donate/', donate, name='donate'),

@@ -196,8 +196,12 @@ p {
     font-size: 22px;
 }
 
-h2, p {
+h2 {
     color: black;
     font-family: 'Nanum Gothic', sans-serif;
+}
+
+.cookie-info, .cookie-name {
     padding-bottom: 30px;
 }
+
