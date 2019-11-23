@@ -8,5 +8,7 @@ from .models import Cookie
 class CookieTests(TestCase):
     
     def test_str(self):
-        test_name = Cookie(name='A Cookie')
-        self. assertEqual(str(test_name), 'A Cookie')
+        self.assertEqual(len(Cookie.objects.all()), 0)
+        new_cookie = Cookie(name='A Cookie', price = 30)
+        new_cookie.save()
+        self.assertEqual(len(Cookie.objects.all()), 1)

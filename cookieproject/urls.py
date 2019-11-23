@@ -23,6 +23,7 @@ from cookie import urls as urls_cookies
 from donate.views import donate
 from .settings import MEDIA_ROOT
 from django.views import static
+from cart import urls as urls_cart
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -31,6 +32,7 @@ urlpatterns = [
     url(r'^$', index, name='index'),
     url(r'^about/', about, name='about'),
     url(r'^donate/', donate, name='donate'),
+    url(r'^cart/', include(urls_cart)),
     url(r'^media/(?P<path>.*)$', static.serve,{'document_root': MEDIA_ROOT}),
     
 ]
