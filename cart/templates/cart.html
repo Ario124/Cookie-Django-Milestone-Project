@@ -11,9 +11,7 @@
                 <h2 class="cookie-name">{{ item.cookie.name }}</h2>
                 <p class="cookie-info">{{ item.cookie.info }}</p>
                 <p class="price">{{ item.cookie.price }}
-                <span>
-                    €
-                </span></p>
+                <span class="glyphicon glyphicon-euro" aria-hidden="true"></p>
                 
                 <form class="form-inline" method="post" action="{% url 'edit_cart' item.id %}">
                     {% csrf_token %}
@@ -35,7 +33,7 @@
             <div class="panel-body text-center">
     <p>Total</p>
     <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
-    <a href="{#}" class="btn btn-success" role="button">Checkout</a>
+    <a href="{% url 'checkout' %}" class="btn btn-success" role="button">Checkout</a>
 </div>
 </div>
 </div>

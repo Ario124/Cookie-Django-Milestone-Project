@@ -20,6 +20,7 @@ from accounts import urls as urls_accounts
 from home.views import index, about
 from cookie.views import allcookies
 from cookie import urls as urls_cookies
+from checkout import urls as urls_checkout
 from donate.views import donate
 from .settings import MEDIA_ROOT
 from django.views import static
@@ -32,6 +33,7 @@ urlpatterns = [
     url(r'^$', index, name='index'),
     url(r'^about/', about, name='about'),
     url(r'^donate/', donate, name='donate'),
+    url(r'^checkout/', include(urls_checkout)),
     url(r'^cart/', include(urls_cart)),
     url(r'^media/(?P<path>.*)$', static.serve,{'document_root': MEDIA_ROOT}),
     
