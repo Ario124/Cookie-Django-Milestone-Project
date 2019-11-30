@@ -46,6 +46,8 @@ The website features for registered users are as follows:
 
 #### Features that can be implemented
 
+* After customers buy items, they are redirected to "ordersent.html" where items bought should be displayed.
+
 ## Technologies used
 These are the technologies used in this web application:
 

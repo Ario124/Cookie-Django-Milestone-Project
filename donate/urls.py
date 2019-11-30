@@ -1,6 +1,9 @@
-from django.conf.urls import url, include
-from donate.views import donate
+from django.conf.urls import url
+from .views import makedonationkey, donation_submit
+
+
 
 urlpatterns = [
-    url(r'^donate/', donate, name="donate"),
+    url(r'^$', makedonationkey, name='makedonationkey'),
+    url(r'^donation/', donation_submit, name='donation_submit'),
 ]

@@ -1,10 +1,27 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+from django.shortcuts import get_object_or_404, render, redirect
+from django.conf import settings
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+import stripe
 
-from django.shortcuts import render, redirect, reverse, HttpResponseRedirect
+stripe.api_key = settings.STRIPE_SECRET
 
+def makedonationkey(request):
+    key = settings.STRIPE_PUBLISHABLE
 
-# Create your views here.
+    context = {
+        'key': key
+    }
 
-def donate(request):
-    return render(request, "donate.html")
+    return render(request, 'donate.html', context)
+
+def donation_submit(request):
+    if request.method == 'POST':
+        charge = stripe.Charge.create(
+            amount = 1000,
+            currency = 'EUR',
+            description = 'Cookie Shop Donation',
+            source = request.POST['stripeToken']
+        )
+        messages.success(request, 'Thank you for your donation!')
+        return redirect('index')
