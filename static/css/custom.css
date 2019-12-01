@@ -1,7 +1,7 @@
 body {
     font-family: Arial;
     padding-top: 50px;
-    background-color: #e5fffa;
+    background-color: white;
     color: green;
 }
 
@@ -29,7 +29,7 @@ p {
 .navbar {
     background-image: none;
     background-color: #1f2021;
-    
+    position: absolute;
 }
 
 
@@ -154,13 +154,20 @@ p {
 }
 
 
+.cookie-information {
+    color: white;
+    text-align: center;
+    margin-right: 76px;
+    padding-bottom: 6px;
+}
+
 .messages {
     position: absolute;
     text-align: center;
     width: 260px;
     max-width: 70%;
     padding: 10px;
-    margin-left: 42%;
+    margin-left: 20%;
 }
 
 .navbar-header {
@@ -172,17 +179,48 @@ p {
 }
 
 .cookie-product {
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
+    width: auto;
+    height: 26vh;
+    margin: -16px -31px;
+}
+
+.cookie-product-checkout {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 26vh;
+    margin: -16px -28px;
 }
 
 .panel {
     margin: 5px;
+    width: 105%;
+    right: 55px;
+    margin-bottom: 25px;
+    
 }
+
+.panel-checkout {
+    margin: 5px;
+    width: 105%;
+    right: 55px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    background-color: white;
+    
+}
+
+.cookie-block-checkout {
+    width: 465px;
+    display: flex;
+    margin: auto;
+    padding-left: 15%;
+}
+
 
 .cookie-block {
     margin-left:21%;
@@ -190,7 +228,7 @@ p {
 }
 
 .panel-default {
-    border-color: #aee8ff;
+    border: 1px solid darkorange;
 }
 
 .price {
@@ -204,6 +242,7 @@ h2 {
 
 .cookie-info, .cookie-name {
     padding-bottom: 30px;
+    padding-top: 15px;
 }
 
 .cart-title {
@@ -282,7 +321,38 @@ h2 {
     .testtext {
         margin-top: 0;
     }
+    
+    .messages {
+    margin-left: 42%;
 }
+
+.cookie-product {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.panel {
+    width: 32%;
+}
+
+.navbar-header {
+    margin-left: 44% !important;
+}
+
+.cookie-block-checkout {
+    padding-left: 0;
+}
+    
+}
+
+
+
+
+
 
 
 
@@ -348,4 +418,13 @@ h4 span {
 
 span {
     color: #ff7600;
+}
+
+.amount {
+    color: black;
+    font-size: 16px;
+}
+
+.strong, span {
+    color: darkorange;
 }
