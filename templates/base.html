@@ -16,8 +16,7 @@
     <script>
         setTimeout(function() {
             $('.alert').fadeOut('slow');
-        }, 20000);
-        
+        }, 2000);
     </script>
     {% endblock head_js %}
 </head>
@@ -25,7 +24,18 @@
     <!-- Fixed masthead -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
+                {% if user.is_authenticated %}
+                {% if product_count > 0 %}
+                <a href="{% url 'show_cart' %}"><i class="fa fa-cart-plus orange-cart"></i></a>
+                <label class="badge badge-warning">{{ product_count }}</label>
+                {% else %}
+                <a href="{% url 'show_cart' %}"><i class="fa fa-cart-plus"></i></a>
+                <label class="badge badge-warning">{{ product_count }}</label>
+                {% endif %}
+                
+                {% endif %}
+                <div class="navbar-header">
+                
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -43,9 +53,6 @@
                         <li>
                         <a href="{% url 'show_cart' %}">
                             <i class="fa fa-shipping-cart"></i>Cart
-                            {% if product_count > 0 %}
-                            <label class="badge badge-warning">{{ product_count }}</label>
-                            {% endif %}
                         </a>
                     </li>
                     {% else %}
@@ -72,7 +79,9 @@
     </nav>
         {% block content %} {% endblock %}
         <footer>
-            
+            <div class="text-center">
+                <p>CREATED BY PATRIK SOLIS</p>
+            </div>
         </footer>
 </body>
 </html>

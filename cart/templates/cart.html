@@ -2,7 +2,7 @@
 {% block content %}
 <div class="hero-image">
 <div class="cookie-block">
-    <h1 class="cart-title text-center">Cart</h1>
+    <h1 class="cart-title text-center">Your cookies:</h1>
     {% for item in items_in_cart %}
         <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-3 display panel panel-default">
             <div class="panel-body text-center">
@@ -31,8 +31,8 @@
             {% endfor %}
         </div>
             <div class="panel-body text-center">
-    <p>Total</p>
-    <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
+    <h4>Total</h4>
+    <h4>{{ total }}<span class="glyphicon glyphicon-euro" aria-hidden="true"></span></h4>
     <a href="{% url 'checkout' %}" class="btn btn-success" role="button">Checkout</a>
 </div>
 </div>

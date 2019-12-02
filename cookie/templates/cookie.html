@@ -11,19 +11,18 @@
 
                 <h2 class="cookie-name">{{ cookie.name }}</h2>
                 <p class="cookie-info">{{ cookie.info }}</p>
+                <a href="{% url 'cookie_details' cookie.id %}"class="btn btn-success" type="submit">Read More</a>
                 <strong><p class="amount">Box of: <span>{{ cookie.amount }}</span> Cookies </p></strong>
                 <p class="price">{{ cookie.price }}
                 <span class="glyphicon glyphicon-euro" aria-hidden="true"></p>
-
                 <form method="post" action="{% url 'add_item_to_cart' cookie.id %}">
                     {% csrf_token %}
                     <div class="input-group">
                         <span class="input-group-btn">
-                            <button class="btn btn-danger" type="submit">Add to cart</button>
+                            <button class="btn btn-danger additem" type="submit">Add to cart</button>
                         </span>
                     </div>
                 </form>
-                <a href="{% url 'cookie_details' cookie.id %}"class="btn btn-success" type="submit">Read More</a>
             </div>
         </div>
     {% endfor %}
