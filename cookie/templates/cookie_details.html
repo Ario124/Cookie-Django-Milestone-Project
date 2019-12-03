@@ -10,6 +10,8 @@
 
                 <h2 class="cookie-name">{{ cookieinfo.name }}</h2>
                 <strong><p class="amount">Box of: <span>{{ cookieinfo.amount }}</span> Cookies </p></strong>
+                
+                <!-- This will show the user more information about a product -->
                 <strong>Ingredients: </strong><p class="cookie-info">{{ cookieinfo.detail }}</p>
                 <a href="{% url 'allcookies' %}"class="btn btn-success" type="submit">Go Back</a>
 

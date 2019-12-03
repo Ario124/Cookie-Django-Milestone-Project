@@ -13,31 +13,34 @@
                                     we accept unique requests, so that you can get exactly what you are looking for and experience the most out of it!
         </p>
     </div>
-                
             <div class="col-md-6 okok toto text-center">
                 <h2 class="abouttext">Our Cookies</h2>
                 <p class="toto">With over 10 years of experience, we specialize in baking our famous premium cookies, with focus on quality and taste.
         Our expertise lies in the baking of our delicious cookies that consists of only the finest of ingredients, and are all natural.
         This together with our secret recipes is what brings the best of the best for your choosing.</p>
             </div>
-              <div class="row col-md-6">
+              <div class="col-md-6">
                 <h2 class="abouttext">Help us grow</h2>
                 <p class="text-center toto">You can help us by buying our finest cookies, if you are interested then proceed to purchase!
                 Or would you rather donate a small sum to help us out?</p>
             </div>
-                <div class="row col-md-6">
+                <div class="col-md-6">
                     <div class="col-md-6 text-right button-change">
+                        
+                        <!-- The Purchase button will redirect the user to register if not logged in. -->
                         {% if user.is_authenticated %}
                         <a href="{% url 'allcookies' %}"><button type="button" class="btn btn-warning btn-lg">Purchase!</button></a>
                         {%  else %}
                         <a href="{% url 'register' %}"><button type="button" class="btn btn-warning btn-lg">Purchase!</button></a>
                         {% endif %}
                     </div>
+                    
+                        <!-- Donation through Stripe -->
                     <div class="col-md-6 text-left button-change">
                         <a href="{% url 'makedonationkey' %}"><button type="button" class="btn btn-warning btn-lg">Donate</button></a>
                     </div>
                 </div>
-                              <div class="row col-md-6">
+            <div class="col-md-6">
                 <h2 class="abouttext">Get in touch with us</h2>
                 <p class="col-md-12 text-center toto"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>cookie@fine.com</p>
                 <p class="col-md-12 text-center toto"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>555 785 1034784</p>

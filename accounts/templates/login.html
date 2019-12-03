@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load bootstrap_tags %}
 {% block content %}
+    <!-- This form will let the user login if account exists -->
     <form method="post" action="{% url 'login' %}" class="accountform">
         <fieldset class="form-group">
             <legend>Login</legend>

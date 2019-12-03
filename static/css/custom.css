@@ -1,7 +1,7 @@
 body {
     font-family: Arial;
     background-color: white;
-    color: green;
+    color: #827d7d;
 }
 
 footer {
@@ -123,7 +123,11 @@ p {
 .glyphicon {
     font-size: medium;
 }
-    
+
+
+.fa-github {
+    margin-left: 15px;
+}
 
 .glyphicon-envelope {
     font-size: 30px;
@@ -483,9 +487,18 @@ h2 {
 }
 
 footer {
-    background-color: #222;
+    background-color: #212020;
     margin-top: 0;
     border-top: 1px solid #4075ab;
+}
+
+.table {
+    margin: -13%;
+    color: white;
+}
+
+.margin-total {
+    margin-top: 13%;
 }
 
 .delivery {

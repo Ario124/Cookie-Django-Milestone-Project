@@ -13,6 +13,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     {% block head_js %}
+    
+    <!-- jQuery to fadeout the messages -->
     <script>
         setTimeout(function() {
             $('.alert').fadeOut('slow');
@@ -24,6 +26,7 @@
     <!-- Fixed masthead -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
+                <!-- This will change the cart color, if it contains items -->
                 {% if user.is_authenticated %}
                 {% if product_count > 0 %}
                 <a href="{% url 'show_cart' %}"><i class="fa fa-cart-plus orange-cart"></i></a>
@@ -46,6 +49,7 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
+                    <!-- If user is authenticated, logout and cart will be available, else it will not. -->
                     {% if user.is_authenticated %}
                         <li><a href="{% url 'allcookies' %}">Cookies</a></li>
                         <li><a href="{% url 'about' %}">About</a></li>
@@ -63,7 +67,7 @@
                 </ul>
             </div>
         </div>
-                
+                <!-- Messages will be shown through here, using different colors depending on action made. -->
                 {% for message in messages %} 
                 {% if 'success' == message.tags %}
                 <div class="messages alert alert-success">
@@ -78,10 +82,12 @@
                 
     </nav>
         {% block content %} {% endblock %}
-        <footer>
-            <div class="text-center">
-                <p>CREATED BY PATRIK SOLIS</p>
+        <!-- Footer with link to my github -->
+        <footer class="page-footer text-center">
+            <div class="">
+                CREATED BY PATRIK SOLIS
+                <a target="_blank" href="https://github.com/Ario124"><i class="fa fa-github fa-2x"></i></a>
             </div>
-        </footer>
+    </footer>
 </body>
 </html>

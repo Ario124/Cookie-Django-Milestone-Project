@@ -4,6 +4,7 @@
 <div class="cookie-block">
     <h1 class="cart-title text-center">Your cookies:</h1>
     {% for item in items_in_cart %}
+    
         <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-3 display panel panel-default">
             <div class="panel-body text-center">
                 <div class="cookie-product" style="background-image: url('{{ MEDIA_URL }}{{ item.cookie.image }}')"></div>
@@ -29,9 +30,27 @@
              </div>
             </div>
             {% endfor %}
+            <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Qty</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in items_in_cart %}   
+                <tr>
+                    <td>{{ item.cookie.name }}</td>
+                    <td>{{ item.cookie.price }}</td>
+                    <td>{{item.quantity}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            </table>
         </div>
             <div class="panel-body text-center">
-    <h4>Total</h4>
+    <h4 class="margin-total">Total</h4>
     <h4>{{ total }}<span class="glyphicon glyphicon-euro" aria-hidden="true"></span></h4>
     <a href="{% url 'checkout' %}" class="btn btn-success" role="button">Checkout</a>
 </div>
