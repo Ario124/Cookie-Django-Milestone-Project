@@ -234,6 +234,12 @@ fieldset a {
     padding-bottom: 6px;
 }
 
+
+.additem {
+    margin-top: 20px;
+}
+
+
 .messages {
     position: absolute;
     text-align: center;
@@ -511,7 +517,13 @@ fieldset a {
     position: absolute;
 }    
 
+.table {
+     margin-top: 30%!important;
 }
+
+}
+
+
 
 
 
