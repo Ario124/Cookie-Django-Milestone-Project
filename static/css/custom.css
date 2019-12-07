@@ -12,6 +12,27 @@ footer {
     color: #A9A9A9;
 }
 
+a {
+    color: #ff9800;
+}
+
+a:focus {
+    color: #ff9e59;
+}
+
+.checkout-total {
+    margin-top: 142%;
+}
+
+.fa-chevron-left {
+    font-size: 40px;
+}
+
+
+.see-cookie {
+    margin-right: 24%;
+}
+
 p {
     color:black;
 }
@@ -234,9 +255,18 @@ fieldset a {
     padding-bottom: 6px;
 }
 
+.glyphicon-minus-sign {
+    margin-left: 25%;
+}
+
+.adjust-cart {
+    position: absolute;
+    top: 31%;
+}
 
 .additem {
     margin-top: 20px;
+    margin-right: 5%;
 }
 
 
@@ -262,8 +292,8 @@ fieldset a {
     background-position: center center;
     background-repeat: no-repeat;
     width: auto;
-    height: 26vh;
-    margin: -16px -31px;
+    height: 17vh;
+    margin: 21px 9px;
 }
 
 .cookie-product-checkout {
@@ -285,13 +315,7 @@ fieldset a {
     border-radius: 33px;
 }
 
-.panel {
-    margin: 5px;
-    width: 105%;
-    right: 55px;
-    margin-bottom: 25px;
-    
-}
+
 
 .panel-checkout {
     margin: 5px;
@@ -312,12 +336,12 @@ fieldset a {
 
 
 .cookie-block {
-    margin-left:21%;
-    margin-top: 20px;
+   margin: 5px;
 }
 
 .panel-default {
     border: 1px solid darkorange;
+    width: min-content;
 }
 
 .price {
@@ -328,6 +352,10 @@ fieldset a {
     color: black;
 }
 
+
+.heho {
+    margin-top: 20px;
+}
 
 h2 {
     color: black;
@@ -344,7 +372,7 @@ h2 {
     color: white;
     margin-right:26%;
     font-size: 40px;
-    padding: 20px;
+    padding-bottom: 10px;
     
 }
 
@@ -354,6 +382,18 @@ h2 {
     font-size: 40px;
     padding: 20px;
     
+}
+
+.panel {
+    display: table;
+    margin: 2px;
+    width: 49%;
+    height: 61vh;
+}
+
+.panel-body {
+    padding: 0;
+    margin: -10%;
 }
 
 .stripe-button-el {
@@ -581,8 +621,11 @@ footer {
 }
 
 .table {
-    margin: -13%;
-    color: white;
+    width: 90%;
+    color: black;
+    margin-left: 5%;
+    margin-top: 7%;
+    margin-bottom: 9%;
 }
 
 .margin-total {

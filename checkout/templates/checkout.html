@@ -14,25 +14,33 @@
 {% endblock head_js %}
 
 {% block content %}
-<div class="cookie-block-checkout">
-    {% for item in items_in_cart %}
-        <div class="col-xs-4 col-sm-4 display panel-checkout panel-default text-center">
-            <strong><p>{{ item.cookie.name }}</p></strong>
-            <div class="panel-body">
-                <div class="cookie-product-checkout" style="background-image: url('{{ MEDIA_URL }}{{ item.cookie.image }}')"></div>
-
-                <div class="caption">
-                    
-                    <p class="cookie-info">{{ item.description }}</p>
-                    <p class="text-center">Qty: {{ item.quantity }}
-                    <br>({{ item.cookie.amount }} cookies per box)</p></br>
-                    <p>{{ item.cookie.price }}</p>
-                </div>
-            </div>
-        </div>
+    <h2 class="text-center">Your Order</h2>
+            {% if items_in_cart %}
         
-    {% endfor %}
-        </div>
+            <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Qty</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in items_in_cart %}
+                <tr>
+                    <td>{{ item.cookie.name }}</td>
+                    <td>{{ item.cookie.price }}</td>
+                    <td>{{item.quantity}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            </table>
+            <a href="{% url 'show_cart'%}"class="col-xs-6 col-xs-offset-3 btn btn-danger adjust-cart" type="submit">Adjust Order</a>
+            
+            
+            {% endif %}
+            <br>
+            <br>
         <div class="text-center">
             <h4 class="total-checkout">Total</h4>
             <h4 class="total-checkout"><strong>{{ total }}</strong><span class="glyphicon glyphicon-euro" aria-hidden="true"></span></h4>
@@ -56,7 +64,7 @@
         
             {% csrf_token %}
             <div class="form-group col-md-12 text-center">
-                <input class=" btn btn-warning" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
+                <input class=" btn btn-success" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
             </div>
         </form>
 {% endblock %}
