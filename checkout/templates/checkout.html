@@ -29,7 +29,7 @@
             <tbody>
                 {% for item in items_in_cart %}
                 <tr>
-                    <td>{{ item.cookie.name }}</td>
+                    <td>{{ item.cookie.name }}  x <strong>{{item.cookie.amount}}</strong></td>
                     <td>{{ item.cookie.price }}</td>
                     <td>{{item.quantity}}</td>
                 </tr>
@@ -66,9 +66,10 @@
             </div>
         
             {% csrf_token %}
-            <div class="form-group col-md-6 text-center">
+            <div class="form-group col-md-12 text-center">
                 <input class=" btn btn-success" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
             </div>
         </form>
         </div>
+        <br>
 {% endblock %}

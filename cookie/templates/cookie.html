@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="hero-image">
-<div class="cookie-block">
+<div class="container">
     <h1 class="cart-title text-center">Our Cookies</h1>
     <h4 class="cookie-information">All of our cookies are homemade, we never use artificial colors, or flavors of any kind.</h4>
     {% for cookie in cookies %}
-        <div class="col-xs-10 col-sm-offset-0 col-sm-6 col-md-3 display panel panel-default">
+        <div class="col-xs-10 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default panel-fix">
             <div class="panel-body text-center">
                 <div class="cookie-product" style="background-image: url('{{ MEDIA_URL }}{{ cookie.image }}')"></div>
 

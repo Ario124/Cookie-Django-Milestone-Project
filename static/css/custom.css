@@ -299,7 +299,7 @@ fieldset a {
     background-repeat: no-repeat;
     width: auto;
     height: 17vh;
-    margin: 15px 0px;
+    margin: 3px -12px;
     border-radius: 2%;
 }
 
@@ -388,7 +388,7 @@ h2 {
 
 .cookie-info, .cookie-name {
     padding: 3%;
-    margin-top: -4%;
+    margin-top: 8%;
     margin-bottom: 6%;
 }
 
@@ -408,6 +408,14 @@ h2 {
     
 }
 
+.details-title {
+    font-family: 'Jomolhari', serif;
+    color: white;
+    font-size: 40px;
+    padding-bottom: 38px;
+    padding-top: 15px;
+}
+
 .panel {
     display: table;
     margin: 2px;
@@ -417,8 +425,8 @@ h2 {
 }
 
 .panel-body {
-    padding: 0;
-    margin: -10%;
+    padding: 6px;
+    margin: -6%;
     margin-bottom: 15%;
 }
 
@@ -489,17 +497,22 @@ h2 {
     margin-top: 25px;
 }
 
-.cookie-block {
-    margin-left: 8%;
-}
 
 .panel-default-single {
-    margin-left: 34% !important;
+    margin-left: 30% !important;
     margin-bottom: -6% !important;
 }
 
 .panel-body {
     margin-bottom: 5%;
+}
+
+.additem {
+    margin-top: 31px !important;
+}
+
+.panel-detail {
+    margin-left: 29% !important;
 }
 
 .form-group {
@@ -515,6 +528,10 @@ fieldset a {
 
 .login-button {
     margin-left: 150%;
+}
+
+.checkout-total {
+    margin-top: 1px;
 }
 
 .see-cookie {
@@ -551,9 +568,6 @@ fieldset a {
     margin-top: 75px;
 }
 
-.cookie-information {
-    margin-right: 10%;
-}
 
 .navbar {
     position: absolute;
@@ -575,7 +589,6 @@ fieldset a {
 
 .cart-title {
     margin-top: 70px;
-    margin-right: 10%;
 }
 
 
@@ -589,9 +602,11 @@ fieldset a {
 }
 
 .panel {
-    width: 23% !important;
-    margin-bottom: 67px !important;
-    margin-left: 33% !important;
+    width: 42% !important;
+}
+
+.panel-fix {
+    width: 49% !important;
 }
 
 .navbar-header {
@@ -610,10 +625,11 @@ fieldset a {
 
 
 .cookie-info {
-    margin-bottom: 8%;
+    margin-bottom: 2%;
     padding-right: 39px;
     padding-left: 39px;
     font-size: larger;
+    margin-top: 3% !important;
 }
 
 .orange-cart {
@@ -629,7 +645,7 @@ fieldset a {
 }
 
 .margin-total {
-    margin-top: 0 !important;
+    margin-top: 4% !important;
 }
 
 .footer-checkout {
@@ -704,7 +720,7 @@ footer {
 }
 
 .margin-total {
-    margin-top: 13%;
+    margin-top: 3%;
 }
 
 .delivery {

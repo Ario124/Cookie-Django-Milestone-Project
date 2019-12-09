@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="hero-image">
-<div class="cookie-block">
+<div class="container">
     {% if items_in_cart %}
-    <h1 class="cart-title text-center">Your cookies:</h1>
+    <h1 class="cart-title text-center col-md-12">Your cookies:</h1>
         {% for item in items_in_cart %}
         {% if product_count < 2 %}
-        <div class="col-xs-6 col-sm-offset-0 col-sm-6 col-md-3 display panel panel-default panel-default-single">
+        <div class="col-xs-6 col-sm-offset-0 col-sm-6 col-md-6 display panel panel-default panel-default-single">
         {% else %}
-        <div class="col-xs-6 col-sm-offset-0 col-sm-6 col-md-3 display panel panel-default">
+        <div class="col-xs-6 col-sm-offset-0 col-sm-6 col-md-6 display panel panel-default">
         {% endif %}
             <div class="panel-body text-center">
                 <div class="cookie-product" style="background-image: url('{{ MEDIA_URL }}{{ item.cookie.image }}')"></div>
@@ -34,8 +34,8 @@
              </div>
             </div>
             {% endfor %}
-        <div class="text-center col-md-3 col-md-offset-4">
-            <h4 class="margin-total">Total</h4>
+        <div class="container text-center col-xs-12 col-md-12 margin-total">
+            <h4>Total</h4>
             <h4>{{ total }}<span class="glyphicon glyphicon-euro" aria-hidden="true"></span></h4>
             <a href="{% url 'checkout' %}" class="btn btn-success" role="button">Checkout</a>
         </div>
