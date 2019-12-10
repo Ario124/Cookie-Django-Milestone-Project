@@ -475,6 +475,22 @@ h2 {
 
 
 
+@keyframes cookie-color {
+    from {
+        color: darkorange;
+    }
+
+    to {
+        color: white;
+    }
+}
+
+.cookie-color {
+    animation: cookie-color 3s infinite alternate;
+}
+
+
+
           /*==========MEDIA-QUERIES============*/
           
                 /*=======DESKTOP=========*/
@@ -651,6 +667,11 @@ fieldset a {
 .footer-checkout {
     margin-top: 45% !important;
 }
+
+.order-title {
+    margin-top: 6%;
+}
+
 
 }
 
