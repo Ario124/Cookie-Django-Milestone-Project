@@ -80,24 +80,51 @@ These are the technologies used in this web application:
 
 * [HTML](https://www.w3schools.com/html/) The use of HTML for this project was to build the structure and add content, putting everything in place.
 * [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) I have used CSS to style the website with nicely matched colors and a better user experience through keyframes and hover properties.
-* [JavaScript]()
-* [Bootstrap]()
-* [Django]()
-* [Python]()
-* [PostgreSQL]()
-* [Stripe]()
-* [Github]()
-* [Heroku]()
-* [Balsamiq]()
+* [JavaScript](https://www.javascript.com/) My use of Javascript was mainly to activate Stripe. Also used minor jquery fade function.
+* [Bootstrap](https://getbootstrap.com/) I have used Bootstrap to apply styling through the structure, using navbar, grids and containers.
+* [Django](https://www.djangoproject.com/) This project is made with the use of Django.
+* [Python](https://www.python.org/) The logic used in the backend for this project was done through the use of Python.
+* [PostgreSQL](https://www.heroku.com/postgres) Database through Heroku PostgreSQL.
+* [Stripe](https://stripe.com/) The payment system uses Stripe, through Javascript.
+* [Github](https://github.com/) I have used Github to host my project by commits and push.
+* [Heroku](https://heroku.com/) Heroku is also used for Hosting live version of the website.
+* [Balsamiq](https://balsamiq.com/) Balsamiq used mainly to create the wireframes used for this project.
 
 
 ## Testing
+I have tested the website to ensure that it is running smoothly and without major bugs/errors.
+
+These manual tests have been carried out mainly for the following devices:
+
+* Samsung Galaxy S10
+* Desktop
 
 #### Testing website
+
+User Stories:
+
+1. Load the home page using Google Chrome, procceed to open Dev Tools and check to confirm that there are no errors showing up.
+2. Load the web application on Chrome and open Dev Tools, try resolutions for Galaxy S10 and Desktop, these should be responsive. 
+3. Load the home page and verify that the navigation bar follows when scrolling.
+4. Verify that the Favicon is visible and shown on the tab once the homepage has been loaded.
+5. Load the main page and verify that the navigation bar is responsive, it should expand on click if viewed from a mobile device.
+6. Verify that the links on the navigation bar are working, redirecting to the specific pages.
+7. Load the registration page and fill the form to create an account, verify that a message is shown, letting you know that the account has been created.
+8. Load the login page and login with your details, verify that a message is shown letting you know if you've successfully logged in.
+9. Verify that a message is shown once you've logged out, this message should let the user know this.
+10. Load the cookies.html page and verify that the Cookies are on place properly shown and well displayed.
+11. Verify that a cookie is added to the cart when clicking on 'Add to cart' it should result in the cart changing color from white to orange, also showing the amount.
+12. Load the cart.html page and change the amount to any number, click on update to actualize the changes.
+
 
 #### Validation
 
 #### Browsers
+
+* [Google Chrome](https://www.google.com/intl/en/chrome/)
+* [Mozilla Firefox](https://www.mozilla.org/)
+* [Microsoft Edge](https://www.microsoft.com/en-us/windows/microsoft-edge)
+* [Internet Explorer](https://en.wikipedia.org/wiki/Internet_Explorer)
 
 ## Deployment
 
