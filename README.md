@@ -21,12 +21,16 @@ They can also access **Sign Up** that is displayed at the center of the main pag
 
 #### Wireframes/Mockups
 
+#### Mobile
+
 * [Index-Mobile](https://github.com/Ario124/Cookie-Django-Milestone-Project/blob/master/wireframes/index-mobile.png)
 * [About-Mobile](https://github.com/Ario124/Cookie-Django-Milestone-Project/blob/master/wireframes/about-mobile.png)
 * [Cart-Mobile](https://github.com/Ario124/Cookie-Django-Milestone-Project/blob/master/wireframes/cart_mobile.png)
 * [Cookies-Mobile](https://github.com/Ario124/Cookie-Django-Milestone-Project/blob/master/wireframes/cookies-mobile.png)
 * [Checkout-Mobile](https://github.com/Ario124/Cookie-Django-Milestone-Project/blob/master/wireframes/checkout_mobile.png)
 ---
+#### Desktop
+
 * [Index-Desktop](https://github.com/Ario124/Cookie-Django-Milestone-Project/blob/master/wireframes/index-desktop.png)
 * [About-Desktop](https://github.com/Ario124/Cookie-Django-Milestone-Project/blob/master/wireframes/about-desktop.png)
 * [Cart-Desktop](https://github.com/Ario124/Cookie-Django-Milestone-Project/blob/master/wireframes/cart_desktop.png)
@@ -100,7 +104,7 @@ These manual tests have been carried out mainly for the following devices:
 * Desktop
 
 #### Testing website
-
+#### Manual Tests
 User Stories:
 
 1. Load the home page using Google Chrome, procceed to open Dev Tools and check to confirm that there are no errors showing up.
@@ -115,9 +119,19 @@ User Stories:
 10. Load the cookies.html page and verify that the Cookies are on place properly shown and well displayed.
 11. Verify that a cookie is added to the cart when clicking on 'Add to cart' it should result in the cart changing color from white to orange, also showing the amount.
 12. Load the cart.html page and change the amount to any number, click on update to actualize the changes.
+13. Load the cart.html page and proceed to click on 'Checkout' verify that it redirects to the checkoutpage with a summary of whats about to be ordered.
+14. Load the checkout.html page and fill out the forms then verify the payment form works when clicking on 'Submit Payment'
 
+#### Automated Tests
+
+* Basic testing can be found on the cookie/tests.py
 
 #### Validation
+
+These tests were made to control and verify the code is clean and workig properly.
+
+* **HTML** - Used [HTML Validator](https://validator.w3.org/) to validate the html, since the validator does not know about Jinja it gives warnings on "Bad Value" but is good otherwise.
+* **CSS** - Used [CSS Validator](https://jigsaw.w3.org/css-validator/) to validate the css, and no errors were found here. 
 
 #### Browsers
 
@@ -127,6 +141,8 @@ User Stories:
 * [Internet Explorer](https://en.wikipedia.org/wiki/Internet_Explorer)
 
 ## Deployment
+
+
 
 ## Media
 
