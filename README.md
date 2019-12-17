@@ -4,6 +4,8 @@ The purpose for this project is mainly to showcase different types of cookies, f
 Visitors will get information through the available content, encouraging them to sign up to be able to access more content.
 Registered users can access the entire collection of cookies and if intrested they may procceed to purchase by adding products to the shopping cart.
 
+[![Build Status](https://travis-ci.org/Ario124/Cookie-Django-Milestone-Project.svg?branch=master)](https://travis-ci.org/Ario124/Cookie-Django-Milestone-Project)
+
 ---
 ## UX
 
