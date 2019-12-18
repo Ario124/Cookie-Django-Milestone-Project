@@ -142,12 +142,38 @@ These tests were made to control and verify the code is clean and workig properl
 * [Microsoft Edge](https://www.microsoft.com/en-us/windows/microsoft-edge)
 * [Internet Explorer](https://en.wikipedia.org/wiki/Internet_Explorer)
 
-## Deployment
+#### Stripe tests
 
+* I have tested stripe payment with the guide they provide
+
+[Stripe Guide](https://stripe.com/docs/testing)
+
+## Deployment
+### Remote Deployment
+
+Follow these steps to get on your way and successfully deploy through Heroku:
+
+1. pip3 freeze > requirements.txt
+2. Create a file named 'Procfile' and make sure it is within the project.
+3. Once the Profile is created input: web: gunicorn cookieproject.wsgi:application and save it.
+4. Create a new project on Heroku!
+5. Go to Heroku > Resources > Add-ons and proceed to search 'Heroku Postgres' and activate it.
+6. Make sure you are using Postgres and not the local sqlite3 database, check env.py and settings.py.
+7. Go to Heroku once again, this time go to Settings > Reveal Config Vars and add the environment variables.
+8. Add all the envirnoment variables > 'AWS_ACCESS_KEY_ID', 'AWS_SECRET_ACCESS_KEY', 'SECRET_KEY', 'STRIPE_PUBLISHABLE' and 'STRIPE_SECRET'.
+9. You will now have to update the settings.py file in order to connect to the database. Use dj_database_url.
+10. Use **python3 manage.py makemigrations** followed by **python3 manage.py** migrate in order to migrate the neccesary files.
+11. Host the media files and static files using AWS S3 (Bucket).
+12. Once S3 is good to go you may want to use the following command to update the bucket > **python3 manage.py collectstatic**
+
+* You can create an account by using the following command: **python3 manage.py createsuperuser**
 
 
 ## Media
 
+The pictures used for this project come from google searches.
+The main purpose of usage of these pictures are for educational purposes only.
+
 ## Credits
 
-### Disclaimer
+I would like to thank my mentor Juan Monetti for supporting me through the project with valuable feedback.
