@@ -34,3 +34,10 @@ def edit_cart(request, id):
         
     request.session['cart'] = cart
     return redirect(reverse(show_cart))
+    
+def remove_cookie(request, id):
+    cart = request.session.get('cart', {})
+    
+    cart.pop(str(id))
+    request.session['cart'] = cart
+    return redirect(reverse(show_cart))
