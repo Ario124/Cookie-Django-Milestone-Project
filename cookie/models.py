@@ -6,6 +6,7 @@ from django.db import models
 # Create your models here.
 
 class Cookie(models.Model):
+    """This is the main model, the core for the items 'cookies' """
     name = models.CharField(max_length=200, default='')
     info = models.TextField()
     detail = models.TextField(default='')

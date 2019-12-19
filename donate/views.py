@@ -16,6 +16,7 @@ def makedonationkey(request):
     return render(request, 'donate.html', context)
 
 def donation_submit(request):
+    """A view that charges the user through the use of STRIPE"""
     if request.method == 'POST':
         charge = stripe.Charge.create(
             amount = 1000,

@@ -17,11 +17,13 @@ import stripe
 stripe.api_key = settings.STRIPE_SECRET
 
 def ordersent(request):
+    """A view that will render ordersent.html"""
     return render(request, "ordersent.html")
 
 
 @login_required()
 def checkout(request):
+    """If the request is post and forms are valid, then it will render the forms allowing users to submit their payment"""
     if request.method=="POST":
         order_form = MakeOrder(request.POST)
         payment_form = Payment(request.POST)

@@ -4,11 +4,13 @@ from django.contrib.auth.forms import UserCreationForm
 from django.core.exceptions import ValidationError
 
 class LoginForm(forms.Form):
+    """This form will let the user login with a username and a password"""
     username = forms.CharField()
     password = forms.CharField(widget=forms.PasswordInput)
     
 
 class RegisterForm(UserCreationForm):
+    """A form that lets the user confirm their password when registering"""
     password1 = forms.CharField(label='Password', widget=forms.PasswordInput)
     password2 = forms.CharField(
         label='Password Confirmation',

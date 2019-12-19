@@ -25,6 +25,7 @@ def login(request):
     
 
 def registration(request):
+    """This view will save a form if its valid"""
     if request.method == 'POST':
         user_form = RegisterForm(request.POST)
         if user_form.is_valid():
@@ -46,6 +47,7 @@ def registration(request):
     
     
 def logout(request):
+    """A view that will log out the user, giving a message to notify the action taken"""
     auth.logout(request)
     messages.warning(request, "You have logged out.")
     return redirect(reverse('index'))

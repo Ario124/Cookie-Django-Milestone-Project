@@ -151,11 +151,11 @@ These tests were made to control and verify the code is clean and workig properl
 ## Deployment
 ### Remote Deployment
 
-Follow these steps to get on your way and successfully deploy through Heroku:
+Follow these steps to get on your way and successfully deploy to Heroku:
 
 1. pip3 freeze > requirements.txt
 2. Create a file named 'Procfile' and make sure it is within the project.
-3. Once the Profile is created input: web: gunicorn cookieproject.wsgi:application and save it.
+3. Once the Procfile is created input: web: gunicorn cookieproject.wsgi:application and save it.
 4. Create a new project on Heroku!
 5. Go to Heroku > Resources > Add-ons and proceed to search 'Heroku Postgres' and activate it.
 6. Make sure you are using Postgres and not the local sqlite3 database, check env.py and settings.py.
