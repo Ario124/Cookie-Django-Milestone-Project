@@ -158,6 +158,14 @@ fieldset a {
     display: table;
 }
 
+.imgtest {
+    background-image: url(https://www.rotinrice.com/wp-content/uploads/2016/10/ChocolateChipCookies-1-680x350.jpg);
+    height: 50%;
+    height: 90vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .cookieimg {
     background-image: url(https://florisse.nl/wp-content/uploads/2018/03/Cookies-PNG-Photos.png);
     width: 92%;
@@ -192,6 +200,12 @@ fieldset a {
 
 .icon-bar {
     background-color: #fff;
+}
+
+.fa-truck {
+    color: white;
+    padding: 15px;
+    padding-top: 35px;
 }
 
 .glyphicon {
@@ -252,6 +266,10 @@ fieldset a {
     margin-right: 30%;
 }
 
+.cookietest {
+    margin-left: 50%;
+}
+
 .margin-total {
     margin-top: 8%;
 }
@@ -296,7 +314,11 @@ fieldset a {
     margin-bottom: 6%;
 }
 
-.don-head {
+.cookie-name {
+    font-size: 27px;
+}
+
+.donate-head {
     font-family: 'Jomolhari', serif;
     color: white;
     text-align: center;
@@ -363,7 +385,7 @@ fieldset a {
     padding-top: 15px;
 }
 
-.don-head p {
+.donate-head p {
     color: #ffb6b6;
 }
 
@@ -514,11 +536,12 @@ fieldset a {
         /*==========PANELS============*/
 
 .panel {
-    display: table;
     margin: 2px;
-    width: 49%;
+    width: 48%;
     height: 59vh;
-    margin-bottom: 25px
+    margin-right: 5px;
+    margin-bottom: 25px;
+    display: table;
 }
 
 .panel-body {
@@ -539,7 +562,6 @@ fieldset a {
 
 .panel-default {
     border: 2px solid darkorange;
-    width: min-content;
 }
 
 .panel-default-single {
@@ -679,7 +701,7 @@ fieldset a {
     margin-right: 11%;
 }
     
-.don-head {
+.donate-head {
         margin-top: 26px;
     }
     
@@ -704,6 +726,11 @@ fieldset a {
     right: 19% !important;
 }
 
+.fa-truck {
+    color: white;
+    padding: 15px;
+    padding-top: 40px !important;
+}
 
 .panel-checkout {
     margin-top: 75px;
