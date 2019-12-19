@@ -1,4 +1,4 @@
-# [Cookie Django Milestone Project](linkgoeshere)
+# [Cookie Django Milestone Project](https://cookie-milestone.herokuapp.com/)
 
 The purpose for this project is mainly to showcase different types of cookies, for visitors that could possible be customers.
 Visitors will get information through the available content, encouraging them to sign up to be able to access more content.
