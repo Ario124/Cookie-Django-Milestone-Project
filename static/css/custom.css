@@ -14,7 +14,6 @@ h2 {
 
 footer {
     background-color: #212020;
-    margin-top: -53px;
     border-top: 1px solid #4075ab;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -168,11 +167,11 @@ fieldset a {
 
 .cookieimg {
     background-image: url(https://florisse.nl/wp-content/uploads/2018/03/Cookies-PNG-Photos.png);
-    width: 92%;
+    width: 73%;
     height: 31%;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left:4%;
+    margin-left: 13%;
 }
 
 .cookie-img {
@@ -644,10 +643,6 @@ fieldset a {
 
 @media all and (min-width: 1024px) { 
     
-footer {
-    margin-top: 0px !important;
-}    
-
 .cookieimg {
     width: 50%;
     height: 50%;
